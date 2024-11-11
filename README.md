@@ -7,23 +7,16 @@ To implement Huffman coding to compress the data using Python.
 
 ## Algorithm:
 ### Step1: Count the frequency of each character in the input string.
-<br>
 
 ### Step2: Create nodes for each character and store them in a priority queue based on frequency.
-<br>
 
 ### Step3: Combine the two nodes with the lowest frequency into a new node, repeating until one root node remains.
-<br>
 
 ### Step4: Traverse the tree from root to each leaf node, assigning binary codes by adding '0' for left and '1' for right.
-<br>
 
 ### Step5: Replace each character in the original string with its binary code, producing the compressed output.
-<br>
-
  
 ## Program:
-
 ``` Python
 Developed by : SARAVANA KUMAR
 Register number: 212222230133
@@ -51,7 +44,6 @@ def huffman_code_tree (node, left=True, binString=''):
     d.update(huffman_code_tree (l, True, binString + '0'))
     d.update(huffman_code_tree (r, False, binString + '1'))
     return d
-
 
 # Calculate frequency of occurrence
 freq = {}
@@ -86,8 +78,6 @@ for (char, frequency) in freq:
 ![image](https://github.com/user-attachments/assets/c68be1dd-df34-49e4-a75a-7ea7628b2c7f)
 
 <br>
-
-
 
 ## Result
 Thus the huffman coding was implemented to compress the data using python programming.
